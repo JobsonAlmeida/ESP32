@@ -20,15 +20,7 @@ void app_main(void)
 	while(true){
 		
 		int status = gpio_get_level(BUTTON); 
-		
-//		gpio_set_level(LED_YELLOW, true);
-//		printf("LED acesso!\n");
-//		sleep(1);
-//		
-//		gpio_set_level(LED_YELLOW, false);
-//		printf("LED apagado!\n");
-//		sleep(1);
-		
+				
 		if(status == 0){	
 			printf("botão pressionado -> entrada em nível baixo -> ligar led!\n");		
 			gpio_set_level(LED_YELLOW, true);
@@ -40,8 +32,7 @@ void app_main(void)
 						
 		}
 		
-		sleep(1);
-		
+		sleep(1);	
 		
 	}//while
 	
